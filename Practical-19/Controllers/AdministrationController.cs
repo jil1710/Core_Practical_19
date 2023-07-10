@@ -132,14 +132,14 @@ namespace Practical_19.Controllers
                     UserName = user.UserName
                 };
 
-                if (await userManager.IsInRoleAsync(user, role.Name))
-                {
-                    userRoleViewModel.IsSelected = true;
-                }
-                else
-                {
-                    userRoleViewModel.IsSelected = false;
-                }
+                //if (await userManager.IsInRoleAsync(user, role.Name))
+                //{
+                //    userRoleViewModel.IsSelected = true;
+                //}
+                //else
+                //{
+                //    userRoleViewModel.IsSelected = false;
+                //}
 
                 model.Add(userRoleViewModel);
             }

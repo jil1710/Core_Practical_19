@@ -20,8 +20,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.UserName)
                 </th>
-                 
-                <th></th>
+
             </tr>
         </thead>
         <tbody id="users">
@@ -36,12 +35,6 @@
                         @Html.DisplayFor(modelItem => users.UserName)
                     </td>
                      
-                    <td>
-                        <a asp-action="EditUser" asp-controller="Administration"
-                            asp-route-id="@users.Id" class="btn btn-warning">Edit</a>
-
-
-                    </td>
                 </tr>
             }
         </tbody>
